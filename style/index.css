@@ -1,0 +1,35 @@
+#slidebar {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h3 {
+    margin-left: 25px;
+}
+
+#slidebar img {
+    width: 100%;
+    margin: auto;
+}
+
+#category {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+#category div {
+    padding: 5px;
+    width: 70%;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+#category img {
+    width: 60%;
+}
