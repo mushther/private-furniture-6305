@@ -46,6 +46,67 @@ const slidebar = (data) =>{
 }
 slidebar(slidebarData);
 
+//<<<<<<<<<<---------------bestsaller----------->>>>>>>>>>>>>
+let bestsellerData = [
+    {
+    image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/white_400x.png?v=1657869596",
+    title:"boAt Airdopes 141",
+    rating:"4.8",
+    price:"999",
+    },
+    {
+    image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main-img-R333-1_400x.png?v=1641801662",
+    title:"boAt Rockerz 333",
+    rating:"4.9",
+    price:"1199",
+    },
+    {
+    image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1-2_400x.png?v=1653637007",
+    title:"boAt-watch-wave-neo-stylish-smartwatch",
+    rating:"4.6",
+    price:"1699",
+    },
+    {
+    image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-121-v2-blue_400x.png?v=1612765376",
+    title:"boAt Airdopes 121 v2",
+    rating:"4.8",
+    price:"929",
+    },
+    {
+    image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/CMF.996_400x.png?v=1661155833",
+    title:"Xtend Talk",
+    rating:"5.0",
+    price:"2999",
+    }
+];
+
+const bestSaller = async (data)=>{
+    let category = document.getElementById("bestsaller");
+        data.forEach(el => {
+        let div  = document.createElement("div");
+        let img = document.createElement("img");
+        img.src = el.image_url;
+
+        let div1= document.createElement("div");
+        div1.setAttribute("class","textdiv") 
+
+        let title = document.createElement("p");
+        title.innerText=el.title;
+        let rating = document.createElement("p");
+        rating.innerText=`Rating: ⭐${el.rating}`;
+        let price = document.createElement("p");
+        price.innerText=`₹${el.price}`;
+        let btn = document.createElement("button");
+        btn.innerText="ADD TO CART"
+
+        div1.append(title,rating,price,btn);
+        div.append(img,div1);
+        category.append(div);
+    });
+}
+bestSaller(bestsellerData);
+
+
 //    <<<<<<<<<<<---------SHOP BY CATEGORY------------->>>>>>>>
 
 let categoryData = [
@@ -103,7 +164,6 @@ let categoryData = [
     },
 
 ];
-
 const category = (data) => {
     let category = document.getElementById("category");
     data.forEach(el => {
@@ -118,3 +178,116 @@ const category = (data) => {
     });
 }
 category(categoryData);
+
+// <<<<<<<<<<<<<<--------- video apend ------------->>>>>>>>>>
+const autoplay = async () =>{
+
+    let data = [
+        {
+         video_url: "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/quinn_aNMbCNA29Xi8HUyLtIJkh_1300.mp4?v=11982520568606159882",
+         image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/2_85232e56-016f-4201-8612-d70525d301b5_small.png?v=1663821109",
+         title:"boAt Airdopes 190",
+         price:"1299",
+        },
+        { 
+         video_url: "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/quinn_Icbu8Gdl3GYtBy9W97q10_1200.mp4?v=16238232401341532396", 
+         image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main-image-3_e934902f-345b-4cc4-80b9-9ef3d77a1f34_small.png?v=1661272676",
+         title:"boAt Storm Pro Call",
+         price:"1799"
+        },
+        { 
+            video_url: "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/quinn_rfcpupPH91wNHtK3BOvFW_1200.mp4?v=8749322954131352540", 
+            image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/CMF.1028_small.png?v=1661155840",
+            title:"boAt Xtend Talk",
+            price:"2999"
+        },
+        { 
+            video_url: "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/quinn_rq_O5tqSZIIgR13t0gUaN_800.mp4?v=6083534206712186131", 
+            image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1_05260e43-8f0b-4776-a433-ea2089c7f7e7_small.png?v=1659614550",
+            title:"boAt Airdopes 141 Pro",
+            price:"1499"
+        },
+        { 
+            video_url: "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/quinn_lUtZiAPq1HANGe2gvJovW_800.mp4?v=2126044101788558141", 
+            image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Untitled-5_small.png?v=1658294451",
+            title:"boAt Wave Select Smartwatch",
+            price:"2499"
+        },
+        { 
+            video_url: "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/quinn_-vF35-rQnNyg9d5vdpnyC_800.mp4?v=3477037477854459646", 
+            image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Untitled-1_e66c4515-7594-4726-89d6-e2b311a39c94_small.png?v=1658436784",
+            title:"boAt stone 1000v2",
+            price:"2999"
+        },
+        { 
+            video_url: "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/quinn_JT5ptn7CC1JX0ufRBgp2y_1200.mp4?v=5011195729603710195", 
+            image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/iiolo_small.png?v=1658150489",
+            title:"boAt Airpodes 121 PRO",
+            price:"1299"
+        },
+        { 
+            video_url: "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/quinn_qjLwUylO1VpwhJhIfdKxH_800.mp4?v=286953491841958588", 
+            image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Blue_0b68b413-f3ee-4c92-84bc-ba9cd6665463_small.png?v=1657775058",
+            title:"boAt Airdopes 131 PRO",
+            price:"999"
+        },
+    ];
+
+    let video_div = document.getElementById("video_div");
+    data.forEach(el => {
+        let div = document.createElement("div");
+        let video = document.createElement("video");
+        video.src=el.video_url;
+        //  preload="none" loop="true" playsinline="true" autoplay="true" muted="true"
+        video.setAttribute("autoplay","true");
+        video.setAttribute("preload","none");
+        video.setAttribute("loop","true");
+        video.setAttribute("playsinline","true");
+        video.muted="true";
+        let img = document.createElement("img");
+        img.src=el.image_url;
+        let title = document.createElement("p");
+        title.innerText=el.title;
+        let price = document.createElement("p");
+        price.innerText= `₹${el.price}`;
+
+    div.append(video,img,title,price);
+    video_div.append(div);
+    });
+}
+autoplay();
+// <<<<<<<<<<<--------------- NewLunch---------------->>>>>>>>>
+
+let newLunchData = [
+    {
+    image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/orion_300x.png?v=1664177169",
+    title:"boAt Aavante Orion",
+    rating:"4.8",
+    price:"6999",
+    },
+    {
+    image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1_eebd7966-a481-44a9-91a2-bef06d4c0f05_400x.png?v=1663821109",
+    title:"boAt Airdopes 190",
+    rating:"5.8",
+    price:"1299",
+    },
+    {
+    image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/w_300x.png?v=1663758990",
+    title:"boAt Airdopes 393 ANC",
+    rating:"6.8",
+    price:"2599",
+    },
+    {
+    image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/245pro4_300x.png?v=1663584969",
+    title:"boAt Rockrez 245 Pro",
+    rating:"6.7",
+    price:"999",
+    },
+    {
+    image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/2_4f4984e7-01a2-4398-ae64-a7c021b1eaaf_300x.png?v=1663246010",
+    title:"boAt Wave Beat",
+    rating:"7.5",
+    price:"1399",
+    },
+];
+
