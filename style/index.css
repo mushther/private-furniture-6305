@@ -1,0 +1,131 @@
+#slidebar {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h3 {
+    margin-left: 25px;
+}
+
+#slidebar img {
+    width: 100%;
+    margin: auto;
+}
+
+#category {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+#category div {
+    padding: 5px;
+    width: 70%;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+#category img {
+    width: 60%;
+}
+
+#iframe {
+    width: auto;
+    margin-left: 10px;
+}
+
+#video_div {
+    height: auto;
+    display: flex;
+    overflow: scroll;
+    overflow-y: hidden;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(192, 182, 182, 0.116);
+
+}
+
+#video_div img {
+    width: 55px;
+    position: relative;
+    top: -40px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#video_div div {
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    height: 98%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+#video_div p+p {
+    color: orangered;
+}
+
+#video_div p {
+    margin-top: -15px;
+}
+
+#video_div video {
+    border-radius: 15px 15px 0px 0px;
+    width: 230px;
+    height: 410px;
+}
+
+#bestsaller {
+    margin: auto;
+    width: 98%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+#bestsaller div {
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(192, 182, 182, 0.322);
+}
+
+#bestsaller div>div {
+    text-align: start;
+    background-color: white;
+    display: grid;
+}
+
+#bestsaller div img {
+    width: 80%;
+}
+
+.textdiv {
+    height: 150px;
+}
+
+.textdiv p {
+    margin-bottom: 3px;
+    margin-top: 1px;
+    margin-left: 10px;
+}
+
+.textdiv p+p+p {
+    color: red;
+    font-weight: 600;
+}
+
+.textdiv button {
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 217, 0);
+    padding: 6px 0px 5px 0px;
+    color: white;
+    font-weight: bolder;
+}
