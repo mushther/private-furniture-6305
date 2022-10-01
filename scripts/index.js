@@ -1,18 +1,12 @@
-/*const getData = async () =>{
-        let API = '23df424b0a53b0899f78685966243ee61'
-    try{
-        let res = await fetch(``);
-        let data = res.json();
-        console.log(data);
-    }
-    catch(err){
-        console.log(err);
-    }
-}
-
-getData();*/
-
+/*
+import navbar from './scripts/navbar.js'
+let navbar_div = document.getElementById("navbar");
+navbar_div.innerHTML=navbar;
+*/
 //<<<<<<<<<<<<<<---------------slidshow--------------------->>>>>>>>>>>>>>>
+import {navbar} from '../scripts/navbar.js'
+
+    document.getElementById("navbar").innerHTML = navbar();
 
 let slidebarData = [
     {

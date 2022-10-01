@@ -1,6 +1,6 @@
 function navbar(){
     return `    <header class="header">
-    <a href="#" class="logo"><img
+    <a href="index.html" class="logo"><img
             src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Asset_2_288x-8_5_small.png?v=1661838672"
             alt="Error"></a>
     <nav id="navbar">
@@ -142,4 +142,4 @@ function navbar(){
 </header>`
 }
 
-export default navbar
+export {navbar}
