@@ -5,7 +5,7 @@
     box-sizing: border-box;
     }
     body {
-        background-color:black;
+        background-color:whitesmoke;
     }
     
     #largeimage {
@@ -16,18 +16,17 @@
     }
     
     #largeimage>p {
-        color: white;
-    
+        color: black;
         margin-left: 30px;
     }
     
     h1 {
-        color: white;
+        color: black;
         font-size: 50px;
     }
     
     #filter {
-        color: white;
+        color: black;
         display: flex;
         margin-left: 30px;
         cursor: pointer;
@@ -316,7 +315,7 @@
     }
     #lowerpart{
         width: 80%;
-        color: white;
+        color: black;
         margin: auto;   
         margin-top: 70px;
     }
@@ -426,5 +425,22 @@
     h6{
         text-align: center;
         color: beige;
+    }
+    #ReadMore{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        /* justify-content: space-between; */
+        gap:20px;
+
+
+    }
+    #ReadMore>div{
+        width: 97%;
+        margin-top: 20px;
+    
+    }
+    #ReadMore>div>img{
+        width:100%;
+        height: 140px;
     }
     
