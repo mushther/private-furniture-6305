@@ -17,8 +17,9 @@ body {
 /* header */
 .header {
     background: #ffffff;
-    position: relative;
-    width: 200%;
+    position: fixed;
+    top: 0px;
+    width: 100%;
     margin: auto;
     display: flex;
     align-items: center;
