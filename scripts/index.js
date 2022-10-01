@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /*
 import navbar from './scripts/navbar.js'
 let navbar_div = document.getElementById("navbar");
@@ -8,13 +8,11 @@ navbar_div.innerHTML=navbar;
 import {navbar} from '../scripts/navbar.js'
 
     document.getElementById("navbar").innerHTML = navbar();
-=======
 
 import {displayData} from "../scripts/append.js";
 
 
 //SLIDESHOW
->>>>>>> 25c9f1018d676655411e2db9217298266ea3ce64
 
 let slidebarData = [
     {
