@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
 import navbar from './scripts/navbar.js'
 let navbar_div = document.getElementById("navbar");
@@ -7,6 +8,13 @@ navbar_div.innerHTML=navbar;
 import {navbar} from '../scripts/navbar.js'
 
     document.getElementById("navbar").innerHTML = navbar();
+=======
+
+import {displayData} from "../scripts/append.js";
+
+
+//SLIDESHOW
+>>>>>>> 25c9f1018d676655411e2db9217298266ea3ce64
 
 let slidebarData = [
     {
@@ -40,7 +48,235 @@ const slidebar = (data) =>{
 }
 slidebar(slidebarData);
 
-//<<<<<<<<<<---------------bestsaller----------->>>>>>>>>>>>>
+//BESTSALLER
+let h1 = document.createElement("h3");
+h1.innerText="Best Sellers";
+h1.style.background="rgba(24, 25, 25, 0.365)"
+h1.style.color="white";
+h1.addEventListener("click",()=>{
+    h1.style.background="rgba(24, 25, 25, 0.365)"
+    h1.style.color="white";
+    h2.style=null;
+    h3.style=null;
+    h4.style=null;
+    h5.style=null;
+    let bestsellerData = [
+        {
+        image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/white_400x.png?v=1657869596",
+        title:"boAt Airdopes 141",
+        rating:"4.8",
+        price:"999",
+        },
+        {
+        image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main-img-R333-1_400x.png?v=1641801662",
+        title:"boAt Rockerz 333",
+        rating:"4.9",
+        price:"1199",
+        },
+        {
+        image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1-2_400x.png?v=1653637007",
+        title:"boAt-watch-wave-neo-stylish-smartwatch",
+        rating:"4.6",
+        price:"1699",
+        },
+        {
+        image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-121-v2-blue_400x.png?v=1612765376",
+        title:"boAt Airdopes 121 v2",
+        rating:"4.8",
+        price:"929",
+        },
+        {
+        image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/CMF.996_400x.png?v=1661155833",
+        title:"Xtend Talk",
+        rating:"5.0",
+        price:"2999",
+        }
+    ];
+    displayData(bestsellerData, bestsaller);
+});
+let h2 = document.createElement("h3");
+h2.innerText="Top Earbuds";
+h2.addEventListener("click",()=>{
+    h2.style.background="rgba(24, 25, 25, 0.365)"
+    h2.style.color="white";
+    h1.style=null;
+    h3.style=null;
+    h4.style=null;
+    h5.style=null;
+    let bestsellerData = [
+        {
+        image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1-2_400x.png?v=1653637007",
+        title:"boAt-watch-wave-neo-stylish-smartwatch",
+        rating:"4.6",
+        price:"1699",
+        },
+        {
+        image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/CMF.996_400x.png?v=1661155833",
+        title:"Xtend Talk",
+        rating:"5.0",
+        price:"2999",
+        },
+        {
+        image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main-img-R333-1_400x.png?v=1641801662",
+        title:"boAt Rockerz 333",
+        rating:"4.9",
+        price:"1199",
+        },
+        {
+            image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-121-v2-blue_400x.png?v=1612765376",
+            title:"boAt Airdopes 121 v2",
+            rating:"4.8",
+            price:"929",
+            },
+        {
+        image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/white_400x.png?v=1657869596",
+        title:"boAt Airdopes 141",
+        rating:"4.8",
+        price:"999",
+        },
+        
+    ];
+    displayData(bestsellerData, bestsaller);
+    
+});
+let h3 = document.createElement("h3");
+h3.innerText="Smart Watches";
+h3.addEventListener("click",()=>{
+    h3.style.background="rgba(24, 25, 25, 0.365)"
+    h3.style.color="white";
+    h1.style=null;
+    h2.style=null;
+    h4.style=null;
+    h5.style=null;
+
+    let bestsellerData = [
+        {
+        image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/white_400x.png?v=1657869596",
+        title:"boAt Airdopes 141",
+        rating:"4.8",
+        price:"999",
+        },
+        {
+        image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1-2_400x.png?v=1653637007",
+        title:"boAt-watch-wave-neo-stylish-smartwatch",
+        rating:"4.6",
+        price:"1699",
+        },
+        {
+            image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main-img-R333-1_400x.png?v=1641801662",
+            title:"boAt Rockerz 333",
+            rating:"4.9",
+            price:"1199",
+            },
+            {
+                image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/CMF.996_400x.png?v=1661155833",
+                title:"Xtend Talk",
+                rating:"5.0",
+                price:"2999",
+                },
+        {
+        image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-121-v2-blue_400x.png?v=1612765376",
+        title:"boAt Airdopes 121 v2",
+        rating:"4.8",
+        price:"929",
+        },
+        
+    ];
+    displayData(bestsellerData, bestsaller);
+});
+let h4 = document.createElement("h3");
+h4.innerText="Trending Wireless";
+h4.addEventListener("click",()=>{
+    h4.style.background="rgba(24, 25, 25, 0.365)"
+    h4.style.color="white";
+    h1.style=null;
+    h2.style=null;
+    h3.style=null;
+    h5.style=null;
+
+    let bestsellerData = [
+        {
+        image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1-2_400x.png?v=1653637007",
+        title:"boAt-watch-wave-neo-stylish-smartwatch",
+        rating:"4.6",
+        price:"1699",
+        },
+        {
+        image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/white_400x.png?v=1657869596",
+        title:"boAt Airdopes 141",
+        rating:"4.8",
+        price:"999",
+        },
+        {
+            image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main-img-R333-1_400x.png?v=1641801662",
+            title:"boAt Rockerz 333",
+            rating:"4.9",
+            price:"1199",
+            },
+            {
+                image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-121-v2-blue_400x.png?v=1612765376",
+                title:"boAt Airdopes 121 v2",
+                rating:"4.8",
+                price:"929",
+                },
+        {
+        image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/CMF.996_400x.png?v=1661155833",
+        title:"Xtend Talk",
+        rating:"5.0",
+        price:"2999",
+        },
+        
+    ];
+    displayData(bestsellerData, bestsaller);
+
+});
+
+let h5 = document.createElement("h3");
+h5.innerText="Trending ANC";
+h5.addEventListener("click",()=>{
+    h5.style.background="rgba(24, 25, 25, 0.365)"
+    h5.style.color="white";
+    h1.style=null;
+    h2.style=null;
+    h4.style=null;
+    h3.style=null;
+
+    let bestsellerData = [
+        {
+        image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/white_400x.png?v=1657869596",
+        title:"boAt Airdopes 141",
+        rating:"4.8",
+        price:"999",
+        },
+        {
+        image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main-img-R333-1_400x.png?v=1641801662",
+        title:"boAt Rockerz 333",
+        rating:"4.9",
+        price:"1199",
+        },
+        {
+        image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1-2_400x.png?v=1653637007",
+        title:"boAt-watch-wave-neo-stylish-smartwatch",
+        rating:"4.6",
+        price:"1699",
+        },
+        {
+        image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-121-v2-blue_400x.png?v=1612765376",
+        title:"boAt Airdopes 121 v2",
+        rating:"4.8",
+        price:"929",
+        },
+        {
+        image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/CMF.996_400x.png?v=1661155833",
+        title:"Xtend Talk",
+        rating:"5.0",
+        price:"2999",
+        }
+    ];
+    displayData(bestsellerData, bestsaller);
+});
+document.getElementById("bsNav").append(h1,h2,h3,h4,h5);
+
 let bestsellerData = [
     {
     image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/white_400x.png?v=1657869596",
@@ -74,34 +310,9 @@ let bestsellerData = [
     }
 ];
 
-const bestSaller = async (data)=>{
-    let category = document.getElementById("bestsaller");
-        data.forEach(el => {
-        let div  = document.createElement("div");
-        let img = document.createElement("img");
-        img.src = el.image_url;
+ displayData(bestsellerData, bestsaller);
 
-        let div1= document.createElement("div");
-        div1.setAttribute("class","textdiv") 
-
-        let title = document.createElement("p");
-        title.innerText=el.title;
-        let rating = document.createElement("p");
-        rating.innerText=`Rating: ⭐${el.rating}`;
-        let price = document.createElement("p");
-        price.innerText=`₹${el.price}`;
-        let btn = document.createElement("button");
-        btn.innerText="ADD TO CART"
-
-        div1.append(title,rating,price,btn);
-        div.append(img,div1);
-        category.append(div);
-    });
-}
-bestSaller(bestsellerData);
-
-
-//    <<<<<<<<<<<---------SHOP BY CATEGORY------------->>>>>>>>
+// SHOP BY CATEGORY
 
 let categoryData = [
     {
@@ -173,7 +384,8 @@ const category = (data) => {
 }
 category(categoryData);
 
-// <<<<<<<<<<<<<<--------- video apend ------------->>>>>>>>>>
+// VIDEO APPEND
+
 const autoplay = async () =>{
 
     let data = [
@@ -250,7 +462,9 @@ const autoplay = async () =>{
     });
 }
 autoplay();
-// <<<<<<<<<<<--------------- NewLunch---------------->>>>>>>>>
+
+
+// NEW LUNCH
 
 let newLunchData = [
     {
@@ -284,4 +498,70 @@ let newLunchData = [
     price:"1399",
     },
 ];
+displayData(newLunchData,newLunch);
 
+// BLACK
+const blackfun = async () =>{
+
+    let blackData = [
+        {
+     image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/files/blog_1_600x.webp?v=1663587253",
+     title:"Earphones Buying Guide - Everything You Need To Know",
+    },
+    {
+        image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/files/blog_2_600x.webp?v=1663587325",
+        title:"The Ultimate Smartwatch Guide - Get The World On Your Wrist",
+    },
+    {
+    image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/files/blog_3_600x.webp?v=1663587423",
+    title:"boAt & DC Comics Join Hands",
+},
+{
+    image_url:"https://cdn.shopify.com/s/files/1/0057/8938/4802/articles/Artboard_1_copy_600x.png?v=1663235273",
+    title:"Into The Metaverse We FloAt",
+    }
+];
+
+let blackDiv = document.getElementById("blackDiv");
+blackData.forEach(el => {
+    
+    let div = document.createElement("div");
+    let img = document.createElement("img");
+    img.src=el.image_url;
+    let p = document.createElement("p");
+    p.innerText=el.title;
+    
+    div.append(img,p);
+    blackDiv.append(div);
+});
+
+}
+blackfun()
+
+//inThePress
+
+const inthepress = () =>{
+
+let inThePress_div = document.getElementById("inThePress");
+let div1 = document.createElement("div");
+let h4 = document.createElement("h1");
+h4.innerText="In The Press";
+let p = document.createElement("p");
+p.innerText="The Airdopes 441 is sweat proof and in packs in crisp audio. Great for fitness enthusiasts"
+let div2 = document.createElement("div");
+let img = document.createElement("img");
+img.src = "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/mint_0566185f-75d7-4819-a2a2-e2acc4535e78_200x.png?v=1649066803";
+let img1 = document.createElement("img");
+img1.src ="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/forbes_grey_200x.png?v=1663666690"
+let img2 = document.createElement("img");
+img2.src ="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/techradar_1_ba476d16-16de-4a29-baa2-537f33fc7f88_200x.png?v=1649066820"
+let img3 = document.createElement("img");
+img3.src ="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/ET_1_9f80aa59-c905-4886-b75f-5b96808f2903_200x.png?v=1649066820"
+let img4 = document.createElement("img");
+img4.src ="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/gadgets360_1_6a0c2c78-109a-4cbc-be58-05b893a41d4a_231x.png?v=1649066821"
+
+div1.append(h4,p);
+div2.append(img,img1,img2,img3,img4)
+inThePress_div.append(div1,div2)
+}
+inthepress()
