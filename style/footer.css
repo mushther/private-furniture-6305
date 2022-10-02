@@ -1,0 +1,96 @@
+ 
+*{
+ text-decoration: none;
+}
+ #social img{
+      height: 25px;
+      width: 25px;
+      padding: 10px;
+ }
+ #mail{
+     /* border-top: 1px solid black;
+     border-bottom: 1px solid black; */
+     border: 1px solid red;
+     border-radius: 8px;
+     padding: 8px 14px;
+     height: 40px;
+     display: flex;
+     
+     align-items: center;
+ }
+ #mail input{
+   border: none;
+     height: 20px;
+ }
+ #mail button{
+     height: 35px;
+     background-color: red;
+     border: none;
+     border-radius: 5px;
+     color: white;
+     width: 48%;
+ }
+ #aadvi>#adv2>a,#aadvi>#adv3>a,#aadvi>#adv4>a,#aadvi>#adv5>a,#aadvi>#adv6>a,#aadvi>#adv12>a{
+   color: gray;
+   margin: 2px 1px 0px 0px;
+
+ }
+ #aadvi{
+
+     margin-top: 150px;
+     display: flex;
+     justify-content: center;
+     text-decoration: none;
+     
+     gap: 80px;
+     width: 100%;
+    
+ }
+ #adv2{
+     display: grid;
+     font-size: 12px;
+     word-break: initial;
+ }
+ #adv3{
+     display: grid;
+     font-size: 12px;
+     word-break: initial;
+ }
+ #adv4{
+     display: grid;
+     font-size: 12px;
+     word-break: initial;
+ }
+
+ #adv5{
+     display: grid;
+     font-size: 12px;
+     word-break: initial;
+ }
+ #adv6{
+     display: grid;
+     font-size: 12px;
+     word-break: initial;
+ }
+
+ #aadvi2{
+     margin-left: 135px;
+     
+     
+
+ }
+ #aadvi88{
+     margin-left: 135px;
+     display: flex;
+     gap: 40%;
+   
+
+ }
+ #copyright{
+     margin-left: 135px;
+     
+    
+ }
+
+
+

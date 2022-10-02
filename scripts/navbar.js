@@ -135,7 +135,7 @@ function navbar(){
     </nav>
     <ul id="CartLogin">
         <li class="searchBox"><input type="text" placeholder="Search Your Product"></li>
-        <li><a href="#Login"><i class="fas fa-user"></i></a></li>
+        <li><a href="signup.html"><i class="fas fa-user"></i></a></li>
         <li><a href="#help"></a><i class="fas fa-user-headset"></i></li>
         <li><a href="#cart"><i class="fas fa-shopping-cart"></i></a></li>
     </ul>
